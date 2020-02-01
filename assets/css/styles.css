@@ -1,0 +1,82 @@
+h1 {
+    background: #706c61;
+    color: #f1fcfc;
+    margin: 0;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: lighter;
+    font-family: 'Advent Pro', sans-serif;
+    
+}
+fa-plus {
+    float: right;
+}
+
+span {
+    background: red;
+    margin-right: 20px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    width: 0;
+    display: inline-block;
+    transition: 0.2s linear;
+    opacity: 0;
+}
+/* this is to show the trash bin */
+li:hover span {
+    width: 40px;
+    opacity: 1.0;
+}
+
+ul {
+    margin: 0;
+    list-style: none;
+    font-family: 'Advent Pro', sans-serif;
+    padding: 0;
+}
+
+li {
+    background: #ebe6e6;
+    height: 30px;    
+    line-height: 30px;
+}
+li:nth-child(2n) {
+    background: #f3f3f3;
+}
+
+#container {
+    border: 2px solid gray;
+    width: 360px;
+    margin: 100px auto;
+    background-color: #e1f4f3;
+    border: 1px solid;
+    padding: 0;
+    box-shadow: 5px 5px 8px black;
+}
+
+input {
+    color: #706c61;
+    font-size: 16px;
+    width: 100%;
+    padding: 13px 13px 13px 20px;
+    box-sizing: border-box;
+    border: 1px solid #f1fcfc;
+}
+input:focus {
+    background: whitesmoke;
+    border: 3px solid #706c61;
+    outline: none;
+}
+
+.completed {
+    color: gray;
+    text-decoration: line-through;
+}
+
+body {
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */        
+}
